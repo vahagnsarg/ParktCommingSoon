@@ -16,6 +16,9 @@
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .topleft {
@@ -25,19 +28,15 @@
   }
 
   .topThird {
-    position: absolute;
     width: 100vw;
     height: 13%;
-    top: 0;
     background: #161616;
     opacity: 0.9;
   }
 
   .bottomThird {
-    position: absolute;
     width: 100vw;
     height: 10%;
-    bottom: 0;
     background: #161616;
     opacity: 0.9;
   }
@@ -50,7 +49,6 @@
   }
 
   .media {
-    margin-top: 30px;
     position: flex;
     text-align: center;
     padding: 10px;
@@ -76,11 +74,34 @@
   .insta {
     width: 30px;
   }
-</style>
-<link rel="shortcut icon" 
-      type="image/png" 
-      href="ParktLogoSmall.png" />
 
+  .align{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageInfo{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .info {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    background:black;
+    border-radius: 30px;
+    opacity: 0.9;
+  }
+</style>
+<link rel="shortcut icon" type="image/png" href="ParktLogoSmall.png" />
+<head>
+  <title>Parkt</title>
+</head>
 <body>
 
   <div class="bgimg">
@@ -90,6 +111,21 @@
         <h1 class="text">COMING SOON</h1>
       </div>
     </div>
+
+    <div class="info">
+      <h1 class="text align">What is <img class="imageInfo" src="ParktLogo.png" />?</h1>
+      <p class="text">
+        Have you ever gone to a resturant, bar or somewhere foreign and you dont know where to park? Or even if you are allowed to park on the streets? 
+      </p>
+      <p class="text">
+        Well if you are like me, you would've gone to Google Maps Street View and treid to zoom into that blured parking sign to check what the rules are...
+      </p>
+      <p class="text">
+        Parkt takes that guessing game out of it and provides a solution to look at the surrounding streets and show you the available parking.
+      </p>
+      <p class="text">
+        It's very exciting!!
+      </p>
     </div>
 
     <div class="bottomThird">
